@@ -1,0 +1,109 @@
+html,body,blockquote,code,h1,h2,h3,h4,h5,h6,p,pre {
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    /* display: flex;
+    flex-direction: row; */
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Bricolage Grotesque", serif;
+    font-size: 5em;
+}
+
+h2 {
+    font-family: "Bricolage Grotesque", serif;
+    font-size: 3em;
+}
+
+h3 {
+    font-family: "Bricolage Grotesque", serif;
+    font-size: 2em;
+}
+
+h4 {
+    font-family: "Bricolage Grotesque", serif;
+    font-size: 1.2em;
+}
+
+h5 {
+    font-family: "Bricolage Grotesque", serif;
+    font-size: 1em;
+}
+
+h6 {
+    font-family: "Bricolage Grotesque", serif;
+    font-size: .8em;
+}
+
+a {
+    color: #d55e33;
+    text-decoration: none;
+}
+
+.full-page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.layout {
+    padding: 2rem;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.nav {
+    position: fixed;
+    width: 10vh;
+}
+
+.brand {
+    font-family: "Allura", sans-serif;
+}
+
+.hero {
+    background-color: #252525;
+    color: white;
+}
+
+/* .hero-wrapper {
+    margin-left: 20vh;
+} */
+
+.cursive-header {
+    font-family: Allura, sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.contact {
+    position: sticky;
+    margin-left: 100vh;
+    top: 0;
+}
+
+.checkbox-wrapper {
+    margin-top: 60px;
+}
