@@ -2,13 +2,18 @@
 /* GENERAL STYLES - alphabetical */
 
 html,body,blockquote,code,h1,h2,h3,h4,h5,h6,p,pre {
-    margin:0;
+    margin:0; 
     padding:0;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
+
+    --color-primary: #252525;
+    --color-secondary: #F3ECDF;
+    --color-accent: #68A;
+    --color-cta: #D55E33;
 }
 
 section {
@@ -20,14 +25,18 @@ section {
     max-width: 100%;
 }
 
-.layout.full-height {
+/*.layout {
+    
+}*/
+
+.full-height {
     height: 100vh;
-} */
+}
 
 /* #region TEXT STYLES */
 a {
     text-decoration: none;
-    color: #d55e33;
+    color: var(--color-cta);
 }
 
 button {
@@ -41,7 +50,7 @@ button {
     text-transform: uppercase;
     font-size: 1em;
     letter-spacing: 1px;
-    color: #f3ecdf;
+    color: var(--color-secondary);
 }
 
 h1 {
@@ -85,6 +94,15 @@ p {
     line-height: 1.2;
 }
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    color: var(--color-secondary);
+    opacity: .5;
+}
+
 .label {
     text-transform: uppercase;
     font-weight: 300;
@@ -92,23 +110,48 @@ p {
     padding-top: 10px;
     padding-bottom: 20px;
 }
+
+/* .nav-list {
+    display: none;
+    color: white;
+} */
+
+.work-container {
+    position: absolute;
+}
+
+.nav-link {
+    font-size: 1.75em;
+    padding: 20px 0px 20px 0px;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
 /* #endregion */
 
 .background-primary {
-    background-color: #252525;
-    color: #f3ecdf;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .background-secondary {
-    background-color: #f3ecdf;
+    background-color: var(--color-secondary);
 }
 
 .background-accent {
-    background-color: #68a;
+    background-color: var(--color-accent);
 }
 
 .background-cta {
-    background-color: #d55e33;
+    background-color: var(--color-cta);
 }
 
 .cursive-header {
@@ -117,7 +160,7 @@ p {
     font-weight: 400;
 }
 
-.hero {
+/*.hero {
     height: auto;
 
     display: flex;
@@ -127,6 +170,16 @@ p {
 
     padding-top: 15rem;
     padding-bottom: 15rem;
+}*/
+
+.particle-wrapper {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(21deg, var(--chocolate), #81432c 0%, #693b2a 2%, #4c3228 8%, #422f27 14%, var(--dark) 38%, #252525);
+    padding: 2rem;
+    position: absolute;
+    box-shadow: inset 0 2px 20px 12px rgba(0, 0, 0, .2);
 }
 
 .style-guide-section-wrapper {
@@ -140,7 +193,7 @@ p {
 }
 
 .swatch-wrapper {
-    background-color: #fff;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,6 +210,30 @@ p {
 .label.swatch {
     margin-top: 20px;
 }
+
+.flex-vertical {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.background-primary.hero {
+    /* background: linear-gradient(
+        rgba(0, 0, 0, .5),
+        rgba(0, 0, 0, .5)
+    ),
+    url("images/daniel-lake.jpeg"); */
+    background-size: cover;
+    /*transform: scale(.95);*/
+}
+
+.relative {
+    position: relative;
+}
+
+/*.background-primary.hero:hover {
+
+}*/
 
 /* #endregion */
 
@@ -225,11 +302,37 @@ p {
     .flexible-even-grid {
         flex-direction: column;
     }
+    
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    ul {
+        padding: 0px;
+    }
 
     .swatch-wrapper {
         max-width: 300px;
         margin-top: 10px;
         padding: 20px;
+    }
+
+    .flex-vertical {
+        height: 100%;
+        display: block;
+
     }
 }
 /* #endregion */

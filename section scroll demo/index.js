@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll(".portfolio-item");
 
     window.addEventListener("wheel", (e) => {
         const delta = e.deltaY;
@@ -23,4 +23,4 @@ document.addEventListener("DOMContentLoaded", function () {
             nextSection.scrollIntoView({ behavior: "smooth" });
         }
     })
-})
+});
